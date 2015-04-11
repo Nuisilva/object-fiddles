@@ -52,9 +52,10 @@ Set the value of that key to 'chapstick'.
 Using dot notation, add another key (or property) to your backPack object
 that is named color, with the value being the color of your backpack. */
  
- backPack{};
+ var backPack = {};
  var item = 'firstPocket';
- backPack=[item];
+ backPack[item] = "chapstick"
+ alert(backpack);
 
 //After you do the above, alert your entire backPack object.
 
@@ -64,7 +65,10 @@ that is named color, with the value being the color of your backpack. */
 Alerting to see the data in your Object doesn't work so well.
 Instead, console.log your whole backPack object and then check out the console. */
 
-  //Code here
+  var backPack = {};
+ var item = 'firstPocket';
+ backPack[item] = "chapstick"
+ console.log(backPack);
 
 
 
@@ -76,14 +80,28 @@ Instead, console.log your whole backPack object and then check out the console. 
 
 //Create another 'me' object with the following properties name, age, height, gender, married, eyeColor, hairColor. Fill those properties in with the appropriate values.
 
-  //Code Here
+var me = {
+  name:"Nui",
+  age:"Ancient",
+  height:"ehhh...not short",
+  gender:"Mostly male",
+  married:"...enslaved",
+  eyeColor:"soul-less black",
+  hairColor:"not-ginger",
+}
 
 //Now, loop through your object and alert every value. *Tyler --> 24 --> 6'0 --> Male, etc etc
 
-  //Code Here
+for (keyname in me){
+alert(me[key]);
+};
 
 
-
+for(keyName in Jake) {
+  if (!jake[keyname]){
+    alert(jake[keyname]);
+  }
+}
 
 //NEXT PROBLEM
 
@@ -91,9 +109,16 @@ Instead, console.log your whole backPack object and then check out the console. 
 
 
 //Create an Object called 'album' with 5 keys named different song titles that you make up, with the values being the length of each song.
-
-  //Code Here
-
+var album = {
+  latteralus: "Really really long",
+  wishYouWereHere: "Not long enogh",
+  reDefine : "2:15",
+  noraJones: "4:50"
+}
+ for (key in album) {
+   alert(key);
+ };
+ }
 //Now, loop through your album object alerting every song title individually.
 
   //Code Here
@@ -108,11 +133,21 @@ Instead, console.log your whole backPack object and then check out the console. 
 
 //Create an object called states that has 5 US states as properties with the values being their population (doesn't have to be accurate).
 
-  //Code Here
+var states = {
+  RI : 45000,
+  MA : 15000,
+  UT: 25000,
+  CA: 100000,
+  CO: 30000
+}
 
 //Now, loop through your states object and if the states population is greater than 30K, alert that state.
 
-  //Code Here
+  for(key in states){
+    if(states[key] >= 30000){
+      alert(key);
+    }
+  };
 
 
 
