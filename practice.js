@@ -5,7 +5,8 @@
 
   //Code here
 
-
+var me = { name: "nui", age: "Ya right?!?", };
+  alert (me.name)
 
 
 //NEXT PROBLEM
@@ -16,17 +17,26 @@
 //Make a 'favoriteThings' object that contains the following keys: band, food, person, book, movie, holiday. Have the values to those keys be your favorite thing in that category.
 
   //Code here
+  var favoriteThings = {
+      band: "Tool",
+      food: "Sushi",
+      person: "Me",
+      book: "Read?? when?",
+      movie: "Walice & Grommit",
+      holliday: "Thanksgiving by FARRRRR",
+      }
 
 
 //After you've made your object, add another key named 'car' with the value being your favorite car and then another key named 'brand' with the value being your favorite brand.
 
-  //Code here
+  favorietThings.car="GTO";
+  favoriteThings.brand="Anything cheap";
 
 
 //Now change the food key in your favoriteThings object to be 'Lettuce' and change the book key in your favoriteThings object to be '50 Shades of Gray'.
 
   //Code here
-
+favoriteThings.food="Lettuce";
 
 
 
@@ -41,8 +51,10 @@ Set the value of that key to 'chapstick'.
 
 Using dot notation, add another key (or property) to your backPack object
 that is named color, with the value being the color of your backpack. */
-
-  //Code here
+ 
+ backPack{};
+ var item = 'firstPocket';
+ backPack=[item];
 
 //After you do the above, alert your entire backPack object.
 
