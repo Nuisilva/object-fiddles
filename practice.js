@@ -168,11 +168,16 @@ var user = {
 /*Above you're given a user object. Loop through the user object checking to make sure
 that each value is truthy. If it's not truthy, remove it from the object. */
 
-  //Code Here
+  for(key in user) {
+    if(!user[key]){
+      delete user[key];
+    }
+  }
+  return user;
 
 //Once you get your truthy Object, Change the remaining values in the object to be specific to you (name: 'your name', username: 'your username'), rather than my information.
 
-  //Code Here
+  
 
 
 
@@ -196,12 +201,12 @@ var user = {
 //Let's say I, the user, decided to change my name and email address to the following
 // name -> 'Tyler S. McGinnis', email -> 'tyler.mcginnis@devmounta.in'. Make that change.
 
-  //Code Here
+user[name] = 'Tyler S. McGinnis'
+user["email"] = 'tylermcginnis33@gmail.com'
 
 //Now call the sayName method that's on the user object which will alert the users email
 
-  //Code Here
-
+user.sayName('tylermcginnis33@gmail.com');
 
 
 
@@ -212,18 +217,24 @@ var user = {
 
 //Create an empty object called methodCollection.
 
-  //Code Here
+ var methodCollection = {};
 
 /*Now add two methods (functions that are properties on objects) to your methodCollection
 object. One called 'alertHello' which alerts 'hello' and another method called logHello
  which logs 'hello' to the console. */
 
-  //Code Here
+methodCollection['alertHello']= function(){
+  alert("hello");
+};
+
+methodCollection['logHello'] = function(){
+  console.log("hello");
+};
 
 //Now call your alertHello and logHello methods.
 
-  //Code Here
-
+methodCollection.logHello();
+mehtodCollection.alertHello();
 
 
 
@@ -262,12 +273,21 @@ var colt = {
 array with those four objects. After that console.log the length of the Array and make
 sure that it's equal to 4. */
 
-  //Code Here
+devMountainEmployees[0]=colt,
+devMountainEmployees[1]=ryan,
+devMountainEmployees[2]=cahlan,
+devMountainEmployees[3]=tyler;
+
+
+
 
 /*Now let's say Cahlan has a mental breakdown and has to take a leave of absense to 'find himself'.
 Loop through your devMountainEmployees until you find cahlan, then remove him from the array.*/
-
-  //Code Here
+for (var i=0; i < devMountainEmployees.lenght; i++ ) {
+  if (devMountainEmployee[i] === cahlan){
+    devMountainEmployee.splice([i], 1);
+  }
+};
 
 
 
@@ -309,10 +329,18 @@ of Data is to have an Array full of objects. */
 
 //Create an empty array called users.
 
-  //Code Here
+ var users =[];
 
 /*Now add three user objects to your users array. Each user object should contain the
 following properties. name, email, password, username.*/
+
+users[0]= user1{
+  name: 'fjslkjdslhfhdsjahf',
+  email: 'fdjhslsdjflsdj.com',
+  password: 'kfdjslkjfskljlk',
+  username: 'jsdfksldjl;'
+},
+
 
 //include this as one of the objects in your array.
 var user1 = {
@@ -320,6 +348,28 @@ var user1 = {
     email: 'tylermcginnis33@gmail.com',
     password: 'iLoveJavaScript',
     username: 'infiniateLoop'
+},
+var user2 = {
+  name: 'fjslkjdslhfhdsjahf',
+  email: 'fdjhslsdjflsdj.com',
+  password: 'kfdjslkjfskljlk',
+  username: 'jsdfksldjl;'
+},
+
+var user3 = {
+  name: 'fjslkjdslhfhdsjahf',
+  email: 'fdjhslsdjflsdj.com',
+  password: 'kfdjslkjfskljlk',
+  username: 'jsdfksldjl;'
+},
+
+var user4 = {
+  name: 'fjslkjdslhfhdsjahf',
+  email: 'fdjhslsdjflsdj.com',
+  password: 'kfdjslkjfskljlk',
+  username: 'jsdfksldjl;'
+},
+}
 }
 
 //Your Code Here
